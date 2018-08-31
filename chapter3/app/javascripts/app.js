@@ -14,6 +14,13 @@ import { default as contract } from 'truffle-contract'
  * Compare this against the index.js from our previous tutorial to see the difference
  * https://gist.github.com/maheshmurthy/f6e96d6b3fff4cd4fa7f892de8a1a1b4#file-index-js
  */
+
+window.App = {
+  start: function() {
+
+  }
+};
+
 $( document ).ready(function() {
   if (typeof web3 !== 'undefined') {
     console.warn("Using web3 detected from external source like Metamask")

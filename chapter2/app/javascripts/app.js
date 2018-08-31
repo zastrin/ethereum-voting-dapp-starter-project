@@ -14,6 +14,13 @@ import { default as contract } from 'truffle-contract'
  * Compare this against the index.js from our previous tutorial to see the difference
  * https://gist.github.com/maheshmurthy/f6e96d6b3fff4cd4fa7f892de8a1a1b4#file-index-js
  */
+
+window.App = {
+  start: function() {
+
+  }
+};
+
 $( document ).ready(function() {
   if (typeof web3 !== 'undefined') {
     console.warn("Using web3 detected from external source like Metamask")
@@ -24,4 +31,5 @@ $( document ).ready(function() {
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
     window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
   }
+  App.start();
 });
